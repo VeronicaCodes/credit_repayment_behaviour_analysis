@@ -1,22 +1,46 @@
-# Analysing borrowers' credit repayment behaviour 
+# Research of sales advertising in the housing market 
 
-The goal is to find out whether the factors such as the marital status and the number of children of the borrowers affect the repayment of the loan to the bank on time. The Bank X has provided the data on clients' creditworthiness.
+**Goal:** 
+Our main goal was to find the parameters that will help us determine the market value of real estate properties. 
 
-Tools used:
-Pandas, pymystem3
+**Tools used:** 
+Pandas, pymystem3, NumPy, matplotlib, collections
 
-*Conclusion:* borrowers' marital status and number of children don't have a significant impact on whether they will default on a loan, and the ratio doesn't exceed 3.77% for marital status and 1.73% for the number of children.
+**Conclusion:** 
+* The main parameter is 'total_area' - it has the strongest positive Pearson correlation coefficient (~0.29). Therefore, 'total_area' has the biggest influence on an apartment’s price. 
+* Floor level of the apartment in the building impacts the price significantly as well (0.130251) but its effects are weaker. 
+* The distance from the downtown area has a negative correlation effect, meaning if the distance to the city center increases, the price of the apartment drops (-0.25).
+
+||price_sq_m	|total_area	|km_to_cityCenters	|floor|
+|---|---|---|---|--|
+|price_sq_m	|1.000000	|0.298829	|-0.251029	|0.130251|
+
+We also selected several other parameters that affect prices of the real estate:
+1. 'last_price' is in the range of 1 to 12 million rubles.<br>
+2. 'total_area' is in the range of 20 to 150 $m^2$.<br>
+3. 'rooms' is in the range of 1 to 5.<br>
+4. 'ceiling_height' is 2.2 m and 4 m.<br>
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-# Анализ кредитного поведения заёмщиков в банке
+# Исследование рекламы продаж на рынке жилья
 
+**Цель:**
+Определить параметры, имеющие наиболее сильное влияние на рыночную стоимость недвижимости. Это позволит построить автоматизированную систему, способную обнаруживать аномалии и мошенническую деятельность.
 
-Цель: 
-разобраться влияет ли семейное положение и количество детей клиента на факт погашения кредита в срок. Входные данные от банка Х — статистика о платёжеспособности клиентов.
-Результаты исследования будут учтены при построении модели кредитного скоринга — специальной системы, которая оценивает способность потенциального заёмщика вернуть кредит банку. 
+**Инструменты:**
+Pandas, pymystem3, NumPy, matplotlib, collections
 
-Инструменты:
-Pandas, pymystem3
+**Вывод:** 
+* Основным параметром является total_area — он имеет самый сильный положительный коэффициент корреляции Пирсона (~0,29). Поэтому наибольшее влияние на цену квартиры оказывает именно этот параметр. 
+* Этаж продабщегося помещения также существенно влияет на цену (0,130251), но его влияние слабее. 
+* Удаленность от центра города имеет отрицательный корреляционный эффект: если расстояние до центра города увеличивается, цена квартиры падает (-0,25).
 
-Выводы:
-Семейное положение и количество детей клиента не имеют значительного влияния на выплату кредита. Разница между выплатой и невыплатой незначительная и не превышает 3,77% по семейному положению и 1,73% по количеству детей.
+||price_sq_m |общая_площадь |km_to_cityCenters |этаж|
+|---|---|---|---|--|
+|price_sq_m |1.000000 |0.298829 |-0.251029 |0.130251|
+
+Мы также выбрали несколько других параметров, влияющих на стоимость недвижимости:
+1. 'last_price' находится в диапазоне от 1 до 12 миллионов рублей.<br>
+2. 'total_area' находится в диапазоне от 20 до 150 $м^2$.<br>
+3. 'rooms' находятся в диапазоне от 1 до 5.<br>
+4. 'ceiling_height' находятся в диапазоне  2,2 м и 4 м.<br>
