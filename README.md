@@ -1,4 +1,4 @@
-# Analysing borrowers' credit Rrepayment behaviour 
+# Analysing borrowers' credit repayment behaviour 
 
 The goal is to find out whether the factors such as the marital status and the number of children of the borrowers affect the repayment of the loan to the bank on time. The Bank X has provided the data on clients' creditworthiness.
 
@@ -19,4 +19,4 @@ Pandas, pymystem3
 Pandas, pymystem3
 
 Выводы:
-Семейное положение и количество детей клиента не имеют значительного влияния на выплату кредита. Разница между выплатой и невыплатой незначительна и не превышает 3,77% по семейному положению и 1,73% по количеству детей.
+Семейное положение и количество детей клиента не имеют значительного влияния на выплату кредита. Разница между выплатой и невыплатой незначительная и не превышает 3,77% по семейному положению и 1,73% по количеству детей.
